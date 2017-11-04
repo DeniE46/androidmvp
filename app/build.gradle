@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion '24.0.1'
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId 'com.antonioleiva.androidmvp'
@@ -17,7 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    dataBinding.enabled = true
 }
+
+
 
 dependencies {
     testCompile 'junit:junit:4.12'
